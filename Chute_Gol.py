@@ -48,8 +48,6 @@ def animacao_gol_canto():
 
 def animacao_chute():
     
-
-    # Cada posição é a bola + espaços + gol fixo
     posicoes_bola = [
         "⚽        🥅",
         "  ⚽      🥅",
@@ -70,9 +68,9 @@ def animacao_defesa_estilosa():
         "  ⚽      🥅",     
         "    ⚽    🥅",     
         "      ⚽  🥅",     
-        "        ⚽🧍🥅",   # Goleiro no meio do gol
-        "        🧍✋⚽🥅",  # Goleiro estica a mão
-        "        🧍💥⚽🥅",  # Defesa feita
+        "        ⚽🧍🥅",   
+        "        🧍✋⚽🥅",  
+        "        🧍💥⚽🥅", 
         "        🧍🥅\n\n🧤 Defesa espetacular do goleiro!"
     ]
 
@@ -85,12 +83,12 @@ def animacao_defesa_estilosa():
 
 def animacao_trave():
     cenas = [
-        "⚽        🥅",     # Bola no início
+        "⚽        🥅",     
         "  ⚽      🥅",
         "    ⚽    🥅",
         "      ⚽  🥅",
-        "        💥⚽🥅",   # Bola bate na trave
-        "      ⚽💫   🥅",  # Bola voltando
+        "        💥⚽🥅",   
+        "      ⚽💫   🥅",  
         "    ⚽       🥅",
         "  ⚽         🥅",
         "⚽            🥅\n\n💥 A bola bateu na trave e voltou!"
@@ -104,13 +102,13 @@ def animacao_trave():
 
 def animacao_erro():
     cenas = [
-        "⚽         🥅",     # Preparando chute
-        "  ⚽       🥅",     # Bola no meio
-        "    ⚽     🥅",     # Bola se aproximando do gol
-        "      🧍🥅",       # Goleiro aparece
-        "     🧍💨⚽",     # Goleiro pula e defende
-        "      🧍⚽",      # Bola na mão do goleiro
-        "      🧍\n⚽ \nfoi defendida!"  # Final
+        "⚽         🥅",     
+        "  ⚽       🥅",     
+        "    ⚽     🥅",     
+        "      🧍🥅",       
+        "     🧍💨⚽",     
+        "      🧍⚽",      
+        "      🧍\n⚽ \nfoi defendida!"  
     ]
 
     for cena in cenas:
@@ -152,10 +150,10 @@ def chute_ao_gol():
             random.choice(animacoes_erro)()
             print(f"\n😢 Que pena! Você errou. O resultado correto é {resultado}.")
 
-        print("\nVamos jogar novamente!")
-        jogar_novamente = input("Você quer jogar novamente? (s/n) \n")
-        if jogar_novamente.lower() != "s":
-            print("Obrigado por jogar! Até a próxima!")
+        print("\n🔄 Vamos jogar novamente?")
+        jogar_novamente = input("Digite 's' para continuar ou qualquer outra tecla para sair: ").lower()
+        if jogar_novamente != "s":
+            print("\n🙏 Obrigado por jogar! Até a próxima! 👋")
             return
 
 if __name__ == "__main__":

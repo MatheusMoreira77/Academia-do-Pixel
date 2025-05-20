@@ -31,9 +31,8 @@ def Prova_real_Sub():
         else:
             print("Que pena! Você errou.")
 
-        print("Vamos jogar novamente!")
-        # Pergunta se o usuário quer jogar novamente
-        jogar_novamente = input("Você quer jogar novamente? (s/n) \n")
-        if jogar_novamente.lower() != "s":
-            print("Obrigado por jogar! Até a próxima!")
+        print("\n🔄 Vamos jogar novamente?")
+        jogar_novamente = input("Digite 's' para continuar ou qualquer outra tecla para sair: ").lower()
+        if jogar_novamente != "s":
+            print("\n🙏 Obrigado por jogar! Até a próxima! 👋")
             return
